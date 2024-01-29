@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@font-face { /*para usar font externa escolhida*/
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+header { /*configuração geral de header*/
+    background-image: linear-gradient(to top, #1A5C38, #31a766, #48fa98 80% );    
+    padding: 10px;
+
+}
+
+.cabecalho { /*classe*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 3px 5px  black;
+}    
+
+nav { /*configuração padrão de <nav>*/
+    text-align: left;
+    color: white;
+}
+
+nav > a:hover { /*efeito de mouse em <nav>*/
+    background-color: #31a766;
+    color:#103822    
+}
+
+body{ /*configuração geral do body*/
+    background-color: #fcfbd0;
+    margin: 0px;
+}
+
+h1 { /*configuração geral dos h1*/
+    font-family: 'idroid';
+    color:#26804e;
+}
+
+#h1-especial { /*configuração especifica de um conteudo extra*/
+    border-radius: 10px 10px 0px 0px;
+    background-color: #103822;
+    padding: 5px;
+}
+
+aside {
+    background-color: #84E1AD;
+    text-align: justify;
+    text-indent: 10px; /* recuo na primeira linha*/
+    margin-bottom: 20px; /* para espaçar um elemento do outro*/
+}
+
+aside > h1 {
+    font-family: Arial, Helvetica, sans-serif; /*mudando a fonte desse h1 em especial*/
+    background-color: #31a766;
+    color: white;
+    margin: 0px;
+}
+
+aside > p, ul {
+    padding: 15px; /*espaço entre as letras e a borda*/
+}
+
+#video {
+    background-color:#103822;
+    display: flex; /*centralizei o vídeo*/
+}
+
+aside#video > iframe {
+    display:block; /* posição fixada*/
+    margin-left: auto; /* centralizando*/
+    margin-right: auto; /* centralizando*/
+}
+
+#extra-especial {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* arredondamento das bordas */
+    box-shadow: 0px 1px 5px 0px #00000045; /*sombra ao redor da caixa*/
+}
+
+h2 {
+    font-family: 'idroid';
+    color: #1A5C38;
+    background-image: linear-gradient(to right, #84E1AD, #a8e1c082, #84e1ac5a, #84e1ac02 100%); /*gradiente de cores*/
+    font-weight: lighter; /*deixei a fonte mais fina*/
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    /*width: 800px;*/
+    padding: 10px;
+    margin: 0px 15px 10px 15px; /*margin nas laterais e embaixo*/
+    text-align: justify; /*texto todo justificado*/
+    border-radius: 0px 0px 10px 10px;
+    display: block; /*posição fixada independendo do tamanho de tela*/
+}
+
+picture > img, source {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none; /* tirei o sublinhado padrão dos links*/
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+.link-especial {
+    color:#26804e;
+}
+
+.link-especial:hover {
+    text-decoration: underline;
+}
+
+.link-especial::after {
+   content: '🔗'; /*adicionei um simbolo no final do link*/
+}
+
+footer {
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+    padding:  10px;
+}
+
+footer > p {
+   margin: 0; /*pra deixar a faixa do footer menor*/
+}

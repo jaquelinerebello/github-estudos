@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*ID sobrepõe as configurações de classe*/
+
+/*
+    Existe uma hierarquia:
+    O que vale é o último a ser ligado.
+    Class é ligado antes e o ID depois.
+    Mas o ID vai sempre herdar oq veio da camada
+    acima dele.
+*/
+
+body {
+    background-color:rgb(216, 249, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(14, 98, 70);
+}
+
+/*
+em HTML é id = em CSS #
+em HTML é class= em CSS .
+*/
+
+h1#principal { /*Esse é um seletor personalizado*/
+    text-align: center;
+    color: rgb(17, 15, 15);
+}
+
+h2 {
+    color: rgb(82, 99, 94);
+}
+
+.basico {
+    color: rgb(2, 135, 91);
+}
+
+.intermediario {
+    color:#62620e;
+}
+
+.avancado {
+   color: rgb(98, 14, 14);
+}
+
+.destaque {
+    background-color: #ffff274f;
+}

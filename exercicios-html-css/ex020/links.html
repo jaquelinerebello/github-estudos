@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(243, 33, 33);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited { /* pseudoclass. Configuração para link que já foi visitado */
+            color: darkred;
+        }
+
+        a:hover { /*pseudo-classe. Quando passa o mouse por cima*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /*pseudo-classe. Link que foi clicado*/
+            color: yellow;
+        }
+
+        .: { 
+            background-color: rgb(254, 153, 153); 
+        }
+
+
+        .especial::before { /*é possível aplicar pseudo-elemento a uma class*/
+            content: '\2192'; /*Adicionei aqui um símbolo de HTML5*/
+        }
+
+        .especial::after { /*after: depois de todo os <a> vou colocar as declarações aqui contidas*//*pseudo-elemento é com dois pontos. Pseudo-elemento: modifica conteúdo periférico*/
+            content: '\2190'; /*Adicionei aqui um símbolo de HTML5*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" class="especial">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

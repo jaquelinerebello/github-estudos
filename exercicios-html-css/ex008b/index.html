@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2> 
+    <p>O comando <code>document.getElementById('teste')</code> é escrito
+        em linguagem JavaScript
+    </p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0
+                print(f'O número {num} é par')
+            else:
+                print(f'O número {num} é impar)
+            print('Fim do Programa')
+        </code>
+    </pre>
+    <h2>Citações Simples (não tem quebra de linha)</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é 
+        um burro muito rápido</q>
+    </p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noblr, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML5/tDG-DwAAQBAJ?hl=pt-BR&gbpv=1&dq=livro+html&printsec=frontcover">
+        A diferença entre um texto inline e um bloco
+        de texto é importante. Os elementos HTML neste capítulo
+        descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Esot estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>
+
+<!--
+    Código-fonte: são comandos, partes de código
+
+    <code> é uma tag que deixa a font de texto monoespaçada, se
+    chama assim porque reserva o mesmo espaço lateral
+    pra cada letra, essa tag é ótima pra ler códigos por exemplo.
+    
+    <pre> considera os espaços que você deu no texto,
+    quebra de linha, tabulações.
+
+    Macete: selecione a área de texto que você quer diminuir o recuo do texto>
+    clique em shift + tab ai ele vai recuando.
+
+    Macete: se quiser aumentar o recuo do texto selecione o texto > clique em tab
+    ai ele vai acrescentar uma tabulação.
+
+    <q> para fazer uma citação, <q> vem de quote, é melhor usar assim que colocar
+        manualmente por conta da semântica.
+
+    Agora se você quer usar "" em outro sentido, que não citação, aí é melhor
+    colocar "" direto. Ex: "mais ou menos interessante"
+
+    <blockquote> vai aparecer a sitação deslocada horizontalmente pra lateral direita
+    e vai ter quebra de linha,essa tag é usada para citações maiores/em bloco
+    e pode adicionar um parâmetro a ela <blockquote cite="coloque o link aqui">
+    cite (citando) a fonte da citação no caso. Visualmente não vai ver efeito
+    mas isso é importante para os mecanismos de busca, e também mantem
+    os direitos de quem criou o conteudo citado, ou seja é importante
+    colocar que é o dono da citação. Com a cite você poderia também
+    colocar o link de venda do livro por exemplo ou a página do autor.
+
+    Tag <abbr> serve para Abreviações: é possível dizer pra quem está visitando a página/ pros mecanismos
+    de busca o que siginificam as siglas. Ex: <abbr title="Cascading Style Sheets">CSS</abbr> com essa tag
+    quando parar o cursor em cima da abreviação/sigla vai aparecer o que ela significa
+
+    TAG QUE INVERTE O TEXTO: <bdo dir="rtl"> inverte OU <bdo dir="ltr"> que deixa
+    o texto normal como vemos(l= left, t= to, r= right).
+-->

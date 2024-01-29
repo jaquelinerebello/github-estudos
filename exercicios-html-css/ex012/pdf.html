@@ -1,0 +1,114 @@
+<!--
+    Ainda sobre mídeas:
+    Colocando áudio no seu site:
+    é muito importante nos dispositivos, principalmente
+    nos móveis
+-->
+<!--
+    Dica extra sobre audios: abra seu youtube > youtube studio
+    > biblioteca de áudio > vai aparecer uma lista de audios que podem 
+    ser usados tranquilamente. 
+
+    Se VOCÊ filtrar a biblioteca por atribuição necessária além de colocar
+    o audio no seu site, vai te q colocar o texto que aparece pra colar
+
+    Se VOCÊ fil
+    rar a biblioteca por atribuição não necessária. Aí não
+    precisa copiar texto algum, pode usar apenas o áudio.
+
+    Para usar o aúdio basta baixar o arquivo de aúdio
+-->
+
+<!--
+    Tamanho do arquivo:
+    tome cuidado com o tamanho oq aprendemos em img nesse sentido
+    pode transferir pra mídia, serve para: áudio, video.
+-->
+
+<!--
+    COMPATIBILIDADE com navegadores:
+    tem muito navegador que não tem total compatibilidade com audio
+    então tem que recorrer a diferentes formatos de arquivo:
+     São formatos: MP3, WAV, OGG.
+     
+     Para adicionar audio que fique compativel em outros você vai ter 
+     que fazer isso:
+
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture> <!-- tag <picture> permite criar vários sources/ várias fontes-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Se o valor máx for menor q 1000px eu carrego minha foto-m-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- Por padrão ele vai carregar uma imagem que será essa debaixo
+           agora se o navegador tiver menos que 1000px
+        --> 
+      <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <!-- Segue uma ordem a tag <source> vai tentar reproduzir o 1º se não der vai pro 2º -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <!--
+            Se o navegador não tiver compatibilidade com nenhum desse formatos
+            de áudio aí ele vai pra baicar o arquivo aqui embaixo.
+        -->
+        <p>Infelizmente seu navegador nõa consegue reproduzir áudio. <a
+        href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo
+        MP3</a></p>
+    </audio>
+</body>
+</html>
+
+<!--
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    autoplay: parametro pra reproduzir o som
+    controls: parâmetro que vai incluir o controle de audio (aquela caixa de reprodução)
+-->
+
+<!--
+    <audio preload="auto">:auto é padrão, mas é meio perigoso porque ele só vai considerar
+    que o site terminou de carregar quando o áudio for todo carregado também
+-->
+
+<!--
+    <audio preload="metadata"> ele puxa informações como duração, arquivo, quando aperta
+        o play ele demora um pouco a mais pra começar, pq ai ele começa a fazer o download
+-->
+
+<!--
+    Existe também o parâmetro loop:
+    <audio preload="metadata" autoplay controls loop>
+-->
+
+<!--
+    Evite usar os arquivos wav: são muito pesados.
+
+    Fixe isso: qualidade top de mídias(audio, video, img) é pra arquivo
+    que fará download, não pra arquivo de navegação
+-->
+
+<!--
+    atributo é tudo que eu vou atribuir algum valor.Ex:
+    <video width="600">
+    width="" é um atributo
+
+    propriedade ela por si só acrescenta algo importante. Ex:
+    <video width="600" controls autoplay>
+    controls e autoplay são propriedade
+-->

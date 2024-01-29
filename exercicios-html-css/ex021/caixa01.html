@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level*/
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px; // espessura da borda //
+            border-style: solid;
+            border-color: darkblue;
+            */
+
+            /*
+            Você pode substituir as configurações de borda acima por uma shorthand como abaixo:
+            */
+            border: 10px solid darkblue;
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+
+            /*
+            Você pode substituir as configurações de padding acima por uma shorthand como abaixo:
+            */
+
+            /* Se tiver valores diferentes no padding: 
+            padding: 20px 10px 40px 10px;
+            */
+
+            /*Se tiver o mesmo valor para todos:*/
+            padding: 10px;
+
+            /*Se tiver o mesmo valor para top e bottom, e outra igual para left e right:
+            padding: 10px 20px;
+            */
+
+            margin-top: 20px;  /* margens servem para separar melhor os elementos visualmente */
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /*
+            Você pode substituir as configurações de margin acima por uma shorthand como abaixo:
+            */
+            margin: 20px 20px 40px 20px;
+
+            /* Se eu quiser centralizar uma parte da margin:
+            
+            margin: 20px auto 40px auto;
+            */
+
+           /*
+           margin:auto; // centraliza caixas no meio da tela independendo
+           de qual tela seja //
+           // para centralizar texto use text-align: center; //
+           */
+
+           outline-width: 5px; /* é feito como a borda*/
+           outline-style: dashed; /*está depois da border e está dentro da margin*/
+           outline-color: salmon;
+
+           /*
+            Você pode substituir as configurações de outline acima por uma shorthand como abaixo:
+           */
+
+        }
+
+        a {  /*inline-level*/
+            border-width: 10px;
+            border-style: solid; /*outras border-style: dashed, dotted, double, groove*/
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;  /* margens servem para separar melhor os elementos visualmente */
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1> <!-- h1 é um bloco do tipo box-level-->
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
+
+<!--
+    ótimo para você praticar as propriedades aprendidas nessa aula:
+
+    Posso usar o devtools para visualizar algumas alterações sem mexer no codigo de cara.Ex
+    depois que tem selecionado o h1 lá em devtools, você clica na propriedade que quer alterar
+    ex: heght e pode aumentar ou diminuir clicando nela, pra ver o resultado.
+    Você pode também desabilitar a visão de alguns elemntos. Ex: largura.
+-->

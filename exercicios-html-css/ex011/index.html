@@ -1,0 +1,40 @@
+<!--
+    Boucerate/ taxa de rejeição: é uma medida que o 
+    google usa pra valorizar ou desvalorizar o seu site.
+    Se o seu usuário busca por algo em seu site não acha e 
+    logo vai embora isso é um alto Boucerate, e isso faz o
+    google ver como um site ruim e vai parar de indicar seu site
+    pra outras pessoas.
+    Se preocupe sempre com o usuário, usuário em primeiro lugar!
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture> <!-- tag <picture> permite criar vários sources/ várias fontes-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Se o valor máx for menor q 1000px eu carrego minha foto-m-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- Por padrão ele vai carregar uma imagem que será essa debaixo
+           agora se o navegador tiver menos que 1000px
+        --> 
+      <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+</body>
+</html>
+
+<!--
+    Nessa tag:
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    coloca-se 50px a mais pq geralmente é a largura da barra de rolagem. Então dou
+    uma folga de 50px pra não ficar colado na barra. 
+-->

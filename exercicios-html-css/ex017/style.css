@@ -1,0 +1,18 @@
+body {
+    /*font-family: Arial, Helvetica, sans-serif; */ /*ele vai usar a fonte que encontrar*/
+    font-family: sans-serif; /*se eu coloco assim todos os dispositivos vão ler, poderia por serif, monospace, no lugar também. Mas o próprio visual studio code te sugere combinações seguras */
+
+    /* Medidas absolutas: cm, mm, in(polegada), px, pt, pc
+
+        Medidas Relativas
+
+    */
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+/*
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+*/

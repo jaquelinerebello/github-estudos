@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definition List</title>
+</head>
+<body>
+    <h1>Lista de Definições</h1>
+    <dl> <!-- Definition List (como se fosse um dicionário com termos e significados) -->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo do site</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo do site</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo do site</dd>
+    </dl>
+    <h2>Juntando listas versão 1.0</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>kotlin</li>
+        </ol>
+    </ol>
+
+    <h1>Meus Jogos Favoritos</h1>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevânia</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2> <!-- É como se fosse um dicionário -->
+    <!-- Lembrando que a <dl> também pode ser personalizada pelo CSS-->
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>
+
+<!--
+    start = "" é um parâmetro dentro das tags de
+    list que só funciona para números.
+
+    Então se você estiver trabalhando com A, a ou
+    I, i vai colocar o número no start referente a posição
+    da letra que você quer que apareça. Ex: 
+
+    <ol type="a" start="5">
+
+    1.Antigas
+        a-Clipper
+        b-Visual Basic
+        c- Fortran
+        d- Delphi
+        // perceba o resultado aqui embaixo, ele começou com a  letra e
+    2.Novas
+        e-PHP
+        f-Python
+        g-JavaScript
+       h- kotlin
+
+       obs.: aqui foi para exemplo, mas essa sublista de Novas,  não tem
+       conezão com a de cima então o certo é começar denovo. a, b, c, d.
+
+       Macete: quando quiser editar mais de uma tag clica onde você quer editar
+       ex:
+
+       quero trocar <ol> por <ul> então clico depois do "o" + alt. Mantenho
+       a tecla alt segurada e vou clicando nas outras tags <ol>. depois
+        apago o "o" e digito "u" e todas essas tags vão ser modificadas.
+
+-->
+
+<!--
+    Uma lista dentro da outra é bastante utilizado, se aplica muito a menus
+    por exemplo
+-->
+
+<!--
+    O <dt> e <dd> facilita muito com os mecanismos de busca.
+    quando alguém vai no google e pesquisa "Qual a definição de HTML?"
+    ele dá valor pra um site que tem listas de definição no seu interior.
+-->

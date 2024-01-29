@@ -1,0 +1,14 @@
+#nome {
+    background-color:darkblue;
+    color:white;
+}
+
+#hexadecimal {
+    background-color:#00008b;
+    color: #ffffff;
+}
+
+#rgb {
+    background-color: rgb(0, 0, 139);
+    color: rgb(255, 255, 255);
+}

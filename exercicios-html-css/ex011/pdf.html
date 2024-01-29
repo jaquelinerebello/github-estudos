@@ -1,0 +1,35 @@
+<!-- Imagens dinâmicas, aúdio, video.
+Vamos trabalhar com múltiplas imagens pra
+tamanhos de tela diferentes. 
+
+O peso da imagem é bem relevante, pois o google 
+prejudica sites lentos, e imagem pesada deixa
+o site lento.
+-->
+
+<!--
+    <source> deve começar com tamanho menor
+    e terminar com o tamanho maior (padrã)
+-->
+
+<!--
+    celular: 300 x 300px
+    tablet: 700x700px
+    computador: 1000x100px
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img1.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="img2.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="img3.jpg" type="image/jpeg">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!--
+    Vídeos: diferente de imagens e audios onde o formato
+    do arquivo indica o padrão para abrir e reproduzir a mídia.
+    Vídeos possuem formatos e codecs então nem sempre é viável
+    sua repodrução em todos os navegadores e dispositivos.
+
+    Os formatos de vídeos suportados são: MPEG, WEBM e OGG. 
+    Os 2 primeiros são os mais compativeis com navegadores.
+
+    Mas assim como em áudios é bacana você adicionar mais de 
+    um formato por conta da compatibilidade dos navegadores
+
+    ATENÇÃO: nunca esqueça de usar vídeos livres de direitos autorias
+-->
+
+<!--
+    Dica de conversor para gerar arquivos em diversos formatos:
+    programa open source que se chama HandBrake com ele você converte
+    como fazia com aquele seu programada pago de videos. Inclusive 
+    veja se dá pra baixar ele novamente!
+    Dá pra gerar um arquivo menor tbm pra ajudar o site a ser mais
+    leve
+
+    Tente manter os videos em cerca de 1080px acima disso não hospede
+    no seu próprio site.
+-->
+
+<!--
+    Serviços para hospedagem de vídeos que vai evitar consumir nossos próprios
+    recursos de host contratado:
+    youtube: seus servidores são ultrarápidos, mas todos podem assistir.
+    Ruim para um curso pago por exemplo.
+
+    vimeo: permite limitar quem vai poder ver o vídeo, mas é pago por uma taxa anual
+    e seus algoritmos não são tão eficientes quanto youtube, então os videos
+    travam as vezes
+
+    Para incorporar videos que você subiu pro youtube ou video ao seu codigo HTML, 
+    no youtube basta clicar compartilhar e copiar o codigo que vai aparecer e inclui-lo
+    no seu html. O video funciona de forma bem parecida1.
+-->
+
+<!--
+    Consumo de dados  (Vídeos hospedados no seu próprio site):
+    Quando você tem um arquivo de determinado tamanho dentro do
+    seu site, por exemplo, um vídeo com tamanho 11.504
+    e 1000 pessoas acessando no dia, por exemplo, você vai ter
+    11.500 mega de download, isso dividido por 1024, você tem
+    11,2 giga de consumo de banda, isso considerando esse tamanho de 
+    arquivo, porque na hora de incluir os vídeos, você vai colocar
+    no código vários formatos para atender diferentes navegadores.
+    Então pode consumir mais banda ainda, e isso vai pesar no bolso
+    do cliente. Então vídeos hospedados no seu proprio site vão consumir
+    muito tráfego de dados.
+
+    Existe uma maneira de contornar isso que é usando o youtube ou vimeo
+    para hospedar os videos.
+
+-->
+
+<!--
+    Incorporação de vídeos externos (adicionando vídeo de hospedagens de vídeo)
+    Youtube
+    Vímeo: igual youtube, mas tem a possibilidade de deixar o video privado
+    porem é pago nesse caso. Outra vantagem é que não recomenda outros videos no final
+    do video que rodou, diferente do youtube que no fim pode acabar recomendando
+    videos de concorrentes, e as vezes pro seu cliente isso não será interessante.
+
+    O consumo mensal é ilimatado quando você assina o vimeo, mas tem um limite da quantidade
+    de videosque vc sobe.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML</title>
+</head> 
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Ao acrescentar os diferentes tipos de arquivo de video comece pelo menor, lista crescente -->
+        <video width="560" poster="imagens/capa.jpg" autoplay controls loop>
+            <source src="midia/video1.webm" type="video/webm">
+            <source src="midia/video1.mp4" type="video/mp4">
+            <source src="midia/video1.ogg" type="video/ogg">
+            <source src="midia/video1.mov" type="video/mov">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+    <h1>Inserindo vídeos externos</h1>
+    <!-- Ao dar play de um vídeo que vem do youtube o seu usuário
+         não vai consumir dados do seu servidor, e sim do youtube
+    -->
+    <h2>Do Youtube</h2>
+    <iframe width="560" height="315" src=
+    "https://www.youtube.com/embed/y7o6t15_5XE?si=Mske_6d9DPVeQfYX"
+    title="YouTube video player" frameborder="0" allow="accelerometer;
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+    <h2>Do Vímeo</h2>
+    <iframe src="https://player.vimeo.com/video/29315013?h=4a7399cc6d" width="640"
+    height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen></iframe>
+</body>
+</html>

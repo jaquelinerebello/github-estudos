@@ -1,0 +1,129 @@
+<!--
+   CSS (cascading style sheets): As Folhas de Estilo em Cascata.
+   Qualquer efeito visual é responsabilidade das CSS.
+
+   CSS INLINE fazemos configurações pontuais. Ex:
+   Adicionei aqui o parâmetro style e 2 declarações de font-family
+   color :
+    <body style="font-family: Arial, Helvetica, sans-serif; color: blue;"> 
+    <h1 style="color: red;">Capítulo 1</h1>
+
+
+    OBSERVAÇÃO: as configurações pontuais (HTML style) vão prevalecer
+    sobre as configurações gerais (CSS style). Então se você mudar algo
+    inline, lá dentro da tag <style> quando fizer a configuração geral ela
+    não vai pegar nessa tag que recebeu configuração inline. Claro, não 
+    vai receber a configuração referente a configuração feita inline, se você
+    mudou a cor inline, a configuração geral de cor no style não vai pegar ali.
+
+    Algumas das desvantagens do CSS inline: polui o código HTML, porque
+    HTML hoje me dia está focado em conteúdo, semântica (significado), então
+    tem que ter um porque, um significado, e também é pensado de acordo com
+    os mecanismos de busca!
+
+    E se você tiver que fazer qualquer alteração vai precisar ir linha a linha
+    pra editar, isso vai dar muito trabalho!
+
+    Em resumo, ele só deve ser usado pra configurações pontuais do seu site.
+    Agora pra construção do design do site aí tem outras técnica melhores 
+    como CCS interno ou CSS local e CSS externo.
+
+    CSS INTERNO é bem mais vantajoso que o CSS INLINE, e o CSS externo o
+    mais vantaoso de todos.
+
+
+-->
+
+<!--
+   CCS interno também conhecido como CSS local: para adicionar estilos de forma mais dinâmica
+   e prática e que vai separar melhor visualmente oq é estilo e o que é conteúdo:
+
+   Adicione a tag <style> dentro da área <head>
+
+    CSS INTERNO: vamos usar bastante no dia a dia. Ex: quando tiver uma pag
+    simples e quiser fazer configuração local que não vai ser aplicada a
+    outros documentos.
+
+    Duas desvantagens do CSS INTERNO:
+
+    1- O style/estilo ocupa muito mais linhas que o conteúdo(HTML), então vai ficar
+    aquela coisa gigante antes de você chegar no html pra poder configurá-lo.
+
+    2- Se você tiver 30 páginas e quiser aplicar esse mesmo estilo criado dentro dessa
+    tag style nessas 30 paginas, vai ter que copiar o codigo e replicar pra cada página;
+    E se o site precisar de configuração, você vai precisar mexer no código 30 vezes
+    nesse caso, o que não é nada prático!
+
+    Então o CCS INTERNO é vantajoso pra configurar um documento/uma página apenas, mais q
+    isso não é legal, aí você vai ter que partir pra terceira técnica que é CSS EXTERNO
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Inline e Estilos Locais/Internos </title>
+    <style>
+        /*
+           tudo dentro da tag style é estilo/CSS
+           esse estilo vai ser baseado em seletores.
+           Ex: body {
+
+           }
+
+           body {} aqui foi o seletor que eu criei pra minha tag <body>
+            e tudo que eu colocar entre essas {} vai ser aplicado a minha
+            tag <body>
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(254, 231, 253);
+            color: rgb(71, 71, 242);
+            font-size: 20px;
+        }
+        /* criei seletor pra h1 e agora ele muda numa tacada só
+           todos esses h1 da minha página */
+        h1 {
+            /* Não esquece de colocar ; depois de cada declaração. Declaração é
+            toda essa linha aqui abaixo, como exemplo, que representa o conjunto de propriedade e valor */
+            color: rgb(71, 8, 30); 
+            background-color:rgb(254, 157, 157);
+        }
+
+        h2 {
+            color: #000;
+        }
+
+        p {
+          text-align: justify;  
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Autem error alias cum sint officia tenetur aliquam,
+        voluptatum minus quod voluptas debitis. Aliquam recusandae
+        nostrum repellat suscipit quidem deserunt rem sed!
+    </p>
+    <h2>Capítulo 1.2</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus mollitia quam error maxime odit ipsum sit illo
+        sed libero assumenda, voluptates reprehenderit iusto
+        dignissimos asperiores temporibus ea officia nisi quae.
+    </p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2> 
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Vel excepturi velit in qui quo numquam eius, iste quibusdam,
+        ut praesentium at consequuntur debitis non tempore laudantium!
+        Sed rerum sint blanditiis.
+    </p>
+</body>
+</html>

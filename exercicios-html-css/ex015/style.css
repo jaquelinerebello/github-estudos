@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*
+Essa linha não é obrigatória mas:
+
+Regra @charset caso haja algum problema de
+compatibilidade com caracteres/acentuação
+*/
+
+/* Regras são no início do arquivo CSS
+e começam com @ */
+
+/*
+    Você pode ter mais de um link CSS em uma página
+    por exemplo, caso queira adicionar estilo extra
+    apenas a algumas páginas e não todas! Ex:
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extra.css">    
+*/
+
+/* Vamos fazer as configurações dos seletores */
+body {
+    background-color: rgb(246, 237, 197);
+    color:black;
+    text-align: justify;
+    font-size: 15pt;
+    font-family: Arial;
+}
+
+h1 {
+    color: brown;
+    background-color: rgb(206, 152, 3);
+}
+
+h2 {
+    color: brown;
+}
+
+a {
+    color: brown;
+    /*text-decoration: none;*/ /* tira aquela barra embaixo do link */
+    text-align: right;
+    
+}

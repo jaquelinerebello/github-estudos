@@ -1,0 +1,75 @@
+<!-- Negrito e itálico do jeito certo -->
+<!-- Formatações adicionais em HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        /* Criei um seletor pra <mark> para que todos os marca textos 
+           dessa página fiquem com a mesma configuração */
+        mark{
+            background-color:rgb(204, 229, 252);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>Termo em negrito</b>
+    usando a tag B (forma não semântica)</p>
+    <p>Nesta frase, tenho um <strong>termo em Destaque</strong>
+    usando a tag STRONG (forma semântica).</p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I(não semântica).</p>
+    <p>Nesta frase, temos  um <em>termo em ênfase</em> usando a tag EM (SEMÂNTICA)</p>
+    
+    <h2>Texto marcado</h2>
+        <p>Podemos criar também um  texto marcado <mark>usando a tag MARK</mark></p>
+
+        <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um texto grande e um <small>texto pequeno</small> nesse parágrafo</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser
+       lido, mas não considerado
+    </p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma enfâse e indicar
+       que ele foi adicionado depois. <!-- <ins> tem semantica, é como se tivesse um espaço a ser preenchido com texto-->
+    </p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica)</p>
+    <h2>Texto sobrescrito</h2> 
+    <p>Para inserir coisas como x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas como H<sub>2</sub>O</p>
+</body>
+</html>
+
+<!--
+    Coloquei o parâmetro style dentro da tag mark, style
+    se refere a forma e não semântica, quando for fazer
+    uma formatação pontual é legal fazer assim, mas no geral opte pelo CSS.Ex:
+
+    <mark style="background-color: rgb(22, 162, 177);">usando a tag MARK</mark>
+
+    * Aqui ele vai configurar essa única linha. Então se quiser colocar a 
+      mesma edição pra várias tags ao mesmo tempo vai ter que fazer no css <style>
+
+-->
+
+<!--
+    Tag <small> é semântica na opinião do Gunabara, porque tem significado.
+    ex: em um contrato pode ser solicitado que leia as letras pequenas.
+    porque ali tem observações importantes. Então você consegue dar
+    sentido a letras pequenas. Como se fosse um texto secundário, mas que
+    também deve ser lido.
+-->
+
+<!--
+    <sup> é encima
+    <sub> é embaixo
+-->

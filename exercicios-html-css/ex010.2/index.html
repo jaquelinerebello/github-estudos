@@ -1,0 +1,83 @@
+<!--
+    O fundamento básico do http e do HTML são os links.
+    Quando você acessa um site e clica num lugar pra ir pra outro
+    lugar isso é um link, esse ponto que é clicável chamamos de âncora
+    ou Hiperlink. Todo Hiperlink é construído através de uma âncora
+    dentro do código HTML.
+
+    Encontramos os sites via buscador. O google e o youtube são os mais
+    usados. E como o Youtube pertence ao google, quando você tem uma
+    marca é importante ter além do site um canal no youtube, assim um
+    leva pro outro, você tem que ter uma estratégia de ganhar links.
+
+    Estude mais pra frente sobre SEO. Você vai organizar seu código,
+    seu HTML justamente para os mecanismos de busca te encontrarem,
+    e isso é baseado em links. Por isso os links são tão importantes!
+
+    Veja no pdf a parte sobre links onde te redireciona pra ver o vídeo
+    de um profissional do google falando mais a respeito disso!
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!-- vai apontar pra outro site que não é o nosso aqui -->
+    <!-- aqui abaixo eu criei uma referência a hipertexto pra esse endereço/url que está em href -->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- a = anchor; href = referência hipertexto (pra onde meu site vai), é aqui que você coloca a URL completa; -->
+        
+    <h1>Usando links internos</h1> <!--link é ligação. Faz aqui a relação com outra pág que ta dentro do nosso servidor e diz respeito a nossa própria página --> 
+    <p>
+        <!-- rel="next" ( representa pag de avanço não necessariamente a segunda pag, em resumo é a próxima pag de navegação que vc escolheu)-->
+        Esta é a primeira pág do site. Se você quiser,
+        pode acessar também a minha <a href="pag002.html" target = "_self" rel="next">segunda página</a>
+        <p>Você também pode acessar a nossa <a href="noticias/pag003.html">página de notícias</a></p>
+    </p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/exercicios-algoritmos.pdf" download="exercicios-algoritmos.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/exercicios-algoritmos.rar" download="exercicios-algoritmos.rar" type="application/rar">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
+
+<!--
+    Segure o ctrl + espaço entre "" para aparecer as opções que você tem
+    pra preencher.
+-->
+
+<!--
+    Quando eu faço um link interno eu não preciso indicar/digitar a url inteira
+    isso se os arquivos estiverem na mesma pasta
+-->
+
+<!--
+    rel="" facilita o mecanismo de busca a encontrar o sistema de navegação que
+    você tá criando pro seu site, você deixa claro, diz pro google qual é a proxima
+    pag de navegação. Então você consegue criar essa navegação no seu site, 
+    visualmente não muda, mas tem uma semântica envolvida, vocÊ dá valor a esse link
+-->
+
+<!--
+    Você precisa informar o caminho caso esteja dentro de uma pasta. Ex:
+    <a href="noticias/pag003.html"> 
+-->
+
+<!--
+    Quando o usuário for mudar de página dentro do site e sem mudar a aba
+    coloque o atributo target assim: 
+    <a href="pag002.html" target = "_self" rel="next">
+-->
+
+<!--
+    Downloads
+    
+    Enquanto não tiver o link pra colocar, mas já está criando a estrutura
+    faça assim:
+    <a href="#">Baixar o livro em PDF</a>
+    # representa que o link está vazio
+-->
