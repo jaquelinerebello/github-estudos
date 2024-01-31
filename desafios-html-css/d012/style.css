@@ -25,7 +25,7 @@ body {
     height: 96vh;
     font-family: "Zilla Slab", serif;
     font-weight: 300;
-    font-style: italic;
+    font-style: normal;
     font-size: 2em;
     font-weight: 550;
 
@@ -36,12 +36,13 @@ header {
     text-align: center;
     background-color: var(--color2);
     color: var(--color1); 
-     padding: 20px;
+    padding: 20px;
 }
 
 header h1{
    font-family: 'Passion One Bold';
-   font-weight: lighter;
+   font-weight: 100px;
+   font-size: 1.5em;
 }
 
 header p {
@@ -61,7 +62,7 @@ header a:hover {
 }
 
 section {
-    position: relative;
+  position: relative;
 
 }
 
@@ -70,6 +71,16 @@ div {
  padding: 20px;
  text-align: left;
  margin-top: 100px;
+ font-size: 25px;
+}
+
+p.edicao-paragrafo {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.531);
+    height: 400px;
+    width: 200px;
+    padding: 10px;
+    color: var(--color1);
 }
 
 div#especial-01 {
@@ -81,9 +92,14 @@ div#especial-01 {
 
 div#especial-02 {
     background-color: lightslategray;
+    background-image: url('imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 footer {
     background-color: var(--color2);
     color: var(--color1);
 }
+
