@@ -93,6 +93,8 @@ div#terceira {
 
 div#especial-01 {
     background-image: url('imagens/background001.jpg');
+    max-width: 1920px;
+    max-height: 1280px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
@@ -103,10 +105,12 @@ div#especial-01 {
 div#especial-02 {
     background-color: lightslategray;
     background-image: url('imagens/background002.jpg');
+    max-width: 1920px;
+    max-height: 1175px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    height: 370px;
+  
     font-size: 0.9em;
 }
 
